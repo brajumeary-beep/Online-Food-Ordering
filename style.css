@@ -123,6 +123,8 @@ input {
   display: flex;
   align-items: center;
   gap: 12px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .brand-icon {
@@ -156,8 +158,10 @@ input {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
-  font-size: 0.92rem;
+  justify-content: center;
+  flex: 1;
+  gap: clamp(8px, 1vw, 14px);
+  font-size: 0.76rem;
   font-weight: 500;
 }
 
@@ -230,9 +234,11 @@ input {
 }
 
 .order-btn {
+  display: inline-block;
   border: none;
   background: linear-gradient(90deg, #ff6f2a, #f54916);
   color: #fff;
+  text-decoration: none;
   font-weight: 700;
   border-radius: 8px;
   padding: 0.75rem 1.3rem;
@@ -343,7 +349,7 @@ input {
 
 .category-strip {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 16px;
   background: linear-gradient(180deg, #fff 0%, #f7f8f6 100%);
   padding: 26px clamp(18px, 3vw, 38px) 28px;
@@ -379,12 +385,16 @@ input {
 .category-item.tan { background: #f5dcb9; }
 .category-item.light { background: #dae9f8; }
 .category-item.pale { background: #dfeaf6; }
+.category-item.lavender { background: #eee1f8; }
+.category-item.mint { background: #d9eee5; }
 
 .category-item.pink { border-bottom: 3px solid #d9687d; }
 .category-item.peach { border-bottom: 3px solid #d9823c; }
 .category-item.tan { border-bottom: 3px solid #b98a31; }
 .category-item.light { border-bottom: 3px solid #4d86b5; }
 .category-item.pale { border-bottom: 3px solid #3c9b8b; }
+.category-item.lavender { border-bottom: 3px solid #9867b3; }
+.category-item.mint { border-bottom: 3px solid #39936f; }
 
 .category-thumb {
   height: 86px;
@@ -395,23 +405,31 @@ input {
 }
 
 .category-thumb.pizza {
-  background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/31596394/pexels-photo-31596394.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .category-thumb.burgers {
-  background-image: url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/34407059/pexels-photo-34407059.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .category-thumb.biryani {
-  background-image: url("https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/9738983/pexels-photo-9738983.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .category-thumb.noodles {
-  background-image: url("https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/4223948/pexels-photo-4223948.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .category-thumb.drinks {
-  background-image: url("https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/14509267/pexels-photo-14509267.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.category-thumb.desserts {
+  background-image: url("https://images.pexels.com/photos/7406887/pexels-photo-7406887.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.category-thumb.sides {
+  background-image: url("https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .category-item h4 {
@@ -457,6 +475,7 @@ input {
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: #fff;
   color: #444;
+  text-decoration: none;
   border-radius: 999px;
   padding: 0.55rem 0.95rem;
   font-size: 0.82rem;
@@ -490,6 +509,10 @@ input {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
+.food-card[hidden] {
+  display: none;
+}
+
 .food-image {
   height: 195px;
   background-position: center;
@@ -497,43 +520,119 @@ input {
 }
 
 .margherita {
-  background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/31596394/pexels-photo-31596394.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .chicken-burger {
-  background-image: url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/34407059/pexels-photo-34407059.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .chicken-biryani {
-  background-image: url("https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/4224304/pexels-photo-4224304.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .veg-noodles {
-  background-image: url("https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/37165674/pexels-photo-37165674.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .pizzaspecial {
-  background-image: url("https://images.unsplash.com/photo-1548365328-9f547fb9587c?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/11974636/pexels-photo-11974636.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .zinger {
-  background-image: url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/9207184/pexels-photo-9207184.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .vegbiryani {
-  background-image: url("https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/9738983/pexels-photo-9738983.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .cheesy-noodles {
-  background-image: url("https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/4223948/pexels-photo-4223948.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .mango-lassi {
-  background-image: url("https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/14509267/pexels-photo-14509267.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .fresh-lime {
-  background-image: url("https://images.unsplash.com/photo-1513558161293-cda9efe0c0a3?auto=format&fit=crop&w=700&q=80");
+  background-image: url("https://images.pexels.com/photos/36268523/pexels-photo-36268523.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.dum-biryani {
+  background-image: url("https://images.pexels.com/photos/39536492/pexels-photo-39536492.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.paneer-biryani {
+  background-image: url("https://images.pexels.com/photos/9609865/pexels-photo-9609865.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.egg-biryani {
+  background-image: url("https://images.pexels.com/photos/31537385/pexels-photo-31537385.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.peri-fries {
+  background-image: url("https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.garlic-bread {
+  background-image: url("https://images.pexels.com/photos/13062441/pexels-photo-13062441.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.gulab-jamun {
+  background-image: url("https://images.pexels.com/photos/7406887/pexels-photo-7406887.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.lava-cake {
+  background-image: url("https://images.pexels.com/photos/39214403/pexels-photo-39214403.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.rasmalai {
+  background-image: url("https://images.pexels.com/photos/36236282/pexels-photo-36236282.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.tandoori-pizza {
+  background-image: url("https://images.pexels.com/photos/5639547/pexels-photo-5639547.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.veggie-burger {
+  background-image: url("https://images.pexels.com/photos/5555667/pexels-photo-5555667.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.mushroom-biryani {
+  background-image: url("https://images.pexels.com/photos/9738983/pexels-photo-9738983.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.chicken-noodles {
+  background-image: url("https://images.pexels.com/photos/34170981/pexels-photo-34170981.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.rose-falooda {
+  background-image: url("https://images.pexels.com/photos/18646641/pexels-photo-18646641.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.samosa-duo {
+  background-image: url("https://images.pexels.com/photos/37153389/pexels-photo-37153389.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.fudge-brownie {
+  background-image: url("https://images.pexels.com/photos/40262827/pexels-photo-40262827.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.mutton-biryani {
+  background-image: url("https://images.pexels.com/photos/9609856/pexels-photo-9609856.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.cold-coffee {
+  background-image: url("https://images.pexels.com/photos/33542190/pexels-photo-33542190.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.paneer-tikka {
+  background-image: url("https://images.pexels.com/photos/33430558/pexels-photo-33430558.jpeg?auto=compress&cs=tinysrgb&w=700");
+}
+
+.kulfi {
+  background-image: url("https://images.pexels.com/photos/29699512/pexels-photo-29699512.jpeg?auto=compress&cs=tinysrgb&w=700");
 }
 
 .food-body {
@@ -906,6 +1005,11 @@ input {
   background: linear-gradient(135deg, #1a73e8, #4db6ff);
 }
 
+.cod {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #168b82, #2dad91);
+}
+
 .empty-cart {
   text-align: center;
   color: #666;
@@ -1001,13 +1105,91 @@ input {
   margin-bottom: 10px;
 }
 
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.feature-card span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h4 {
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+}
+
+.feature-card p {
+  font-size: 0.92rem;
+}
+
+.offer-code {
+  display: inline-block;
+  margin: 8px 0 14px;
+  padding: 8px 12px;
+  border: 1px dashed #f15a24;
+  border-radius: 8px;
+  color: #b63d18;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.tracking-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 26px 0;
+  counter-reset: step;
+}
+
+.tracking-step {
+  position: relative;
+  padding: 20px 16px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.tracking-step strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tracking-step p {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.tracking-note {
+  padding: 14px 16px;
+  background: #fff;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+}
+
 @media (max-width: 1100px) {
   .nav-links {
-    gap: 18px;
+    gap: 10px;
   }
 
   .menu-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .site-footer {
@@ -1032,6 +1214,8 @@ input {
   .nav-links {
     order: 3;
     width: 100%;
+    flex-basis: 100%;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -1045,6 +1229,11 @@ input {
   }
 
   .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid,
+  .tracking-steps {
     grid-template-columns: 1fr;
   }
 

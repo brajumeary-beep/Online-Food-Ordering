@@ -84,8 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
-      event.preventDefault();
       const target = link.dataset.target;
+      if (!target) return;
+
+      event.preventDefault();
 
       navLinks.forEach((nav) => nav.classList.toggle('active', nav === link));
       panels.forEach((panel) => {
@@ -224,9 +226,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const paymentName = button.classList.contains('phonepe') ? 'PhonePe' : 'Google Pay';
+      const paymentName = button.classList.contains('phonepe')
+        ? 'PhonePe'
+        : button.classList.contains('gpay')
+          ? 'Google Pay'
+          : 'Cash on Delivery';
       closeCart();
-      showToast(`${paymentName} payment started`);
+      showToast(paymentName === 'Cash on Delivery' ? 'Cash on Delivery selected' : `${paymentName} payment started`);
     });
   });
 

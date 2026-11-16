@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Velora Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="prototype-container">
+      <div class="mockup-wrap">
+        <div class="website-frame" data-page="menu">
+          <header class="topbar">
+            <a class="brand-group" href="index.html">
+              <div class="brand-icon"><span>🍽️</span></div>
+              <div class="brand-copy">
+                <h2>Velora Bites</h2>
+                <small>Good Food Good Mood</small>
+              </div>
+            </a>
+            <nav class="nav-links">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="menu.html" class="nav-link active">Menu</a>
+              <a href="about.html" class="nav-link ">About</a>
+              <a href="contact.html" class="nav-link ">Contact</a>
+              <a href="offers.html" class="nav-link">Offers</a>
+              <a href="desserts.html" class="nav-link">Desserts</a>
+              <a href="combos.html" class="nav-link">Combos</a>
+              <a href="track-order.html" class="nav-link">Track Order</a>
+            </nav>
+            <div class="nav-actions">
+              <a href="menu.html" class="order-btn">Order Now</a>
+            </div>
+          </header>
+
+          <main id="menu-page" class="page-panel active">
+            <section class="menu-section">
+              <div class="menu-header">
+                <div>
+                  <p class="eyebrow">FRESHLY PREPARED FOR YOU</p>
+                  <h3>Our Special Menu</h3>
+                  <p>Discover your favourites, made with fresh ingredients and full of flavour.</p>
+                </div>
+                <div class="filter-group" role="group" aria-label="Filter menu by category">
+                  <button type="button" class="filter-btn active" data-category="all" aria-pressed="true">All</button>
+                  <button type="button" class="filter-btn" data-category="pizza" aria-pressed="false">Pizza</button>
+                  <button type="button" class="filter-btn" data-category="burgers" aria-pressed="false">Burgers</button>
+                  <button type="button" class="filter-btn" data-category="biryani" aria-pressed="false">Biryani</button>
+                  <button type="button" class="filter-btn" data-category="noodles" aria-pressed="false">Noodles</button>
+                  <button type="button" class="filter-btn" data-category="drinks" aria-pressed="false">Drinks</button>
+                  <button type="button" class="filter-btn" data-category="desserts" aria-pressed="false">Desserts</button>
+                  <button type="button" class="filter-btn" data-category="sides" aria-pressed="false">Sides</button>
+                </div>
+              </div>
+              <div class="menu-grid" id="all">
+                <article class="food-card" id="pizza" data-category="pizza">
+                  <div class="food-image margherita"></div>
+                  <div class="food-body">
+                    <h4>Margherita Pizza</h4>
+                    <p>Classic delight with 100% real mozzarella cheese.</p>
+                    <div class="card-row"><span class="price">₹199</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" id="burgers" data-category="burgers">
+                  <div class="food-image chicken-burger"></div>
+                  <div class="food-body">
+                    <h4>Chicken Burger</h4>
+                    <p>Juicy chicken patty with fresh lettuce and cheese.</p>
+                    <div class="card-row"><span class="price">₹149</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" id="biryani" data-category="biryani">
+                  <div class="food-image chicken-biryani"></div>
+                  <div class="food-body">
+                    <h4>Chicken Biryani</h4>
+                    <p>Aromatic basmati rice served with tender chicken.</p>
+                    <div class="card-row"><span class="price">₹249</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" id="noodles" data-category="noodles">
+                  <div class="food-image veg-noodles"></div>
+                  <div class="food-body">
+                    <h4>Veg Noodles</h4>
+                    <p>Stir-fried noodles tossed with fresh vegetables.</p>
+                    <div class="card-row"><span class="price">₹129</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="pizza">
+                  <div class="food-image pizzaspecial"></div>
+                  <div class="food-body">
+                    <h4>Paneer Supreme</h4>
+                    <p>Loaded with paneer, capsicum, onion and herbs.</p>
+                    <div class="card-row"><span class="price">₹259</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="pizza">
+                  <div class="food-image tandoori-pizza"></div>
+                  <div class="food-body">
+                    <h4>Tandoori Chicken Pizza</h4>
+                    <p>Smoky tandoori chicken, peppers and melted mozzarella.</p>
+                    <div class="card-row"><span class="price">₹299</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="burgers">
+                  <div class="food-image zinger"></div>
+                  <div class="food-body">
+                    <h4>Zinger Burger</h4>
+                    <p>Crispy chicken fillet with spicy mayo and lettuce.</p>
+                    <div class="card-row"><span class="price">₹189</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="burgers">
+                  <div class="food-image veggie-burger"></div>
+                  <div class="food-body">
+                    <h4>Crispy Veggie Burger</h4>
+                    <p>Golden veggie patty with crunchy greens and tangy sauce.</p>
+                    <div class="card-row"><span class="price">₹139</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="biryani">
+                  <div class="food-image vegbiryani"></div>
+                  <div class="food-body">
+                    <h4>Veg Biryani</h4>
+                    <p>Fragrant rice with vegetables and rich biryani masala.</p>
+                    <div class="card-row"><span class="price">₹219</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="noodles">
+                  <div class="food-image cheesy-noodles"></div>
+                  <div class="food-body">
+                    <h4>Cheesy Noodles</h4>
+                    <p>Silky noodles tossed with cheese, vegetables and sauce.</p>
+                    <div class="card-row"><span class="price">₹179</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="noodles">
+                  <div class="food-image chicken-noodles"></div>
+                  <div class="food-body">
+                    <h4>Chicken Hakka Noodles</h4>
+                    <p>Wok-tossed noodles with tender chicken and crisp vegetables.</p>
+                    <div class="card-row"><span class="price">₹199</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" id="drinks" data-category="drinks">
+                  <div class="food-image mango-lassi"></div>
+                  <div class="food-body">
+                    <h4>Mango Lassi</h4>
+                    <p>Chilled yogurt drink blended with sweet, ripe mango.</p>
+                    <div class="card-row"><span class="price">₹99</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="drinks">
+                  <div class="food-image fresh-lime"></div>
+                  <div class="food-body">
+                    <h4>Fresh Lime Soda</h4>
+                    <p>A bright, sparkling lime cooler served over ice.</p>
+                    <div class="card-row"><span class="price">₹79</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="drinks">
+                  <div class="food-image rose-falooda"></div>
+                  <div class="food-body">
+                    <h4>Rose Falooda</h4>
+                    <p>A chilled rose milk dessert with basil seeds and vermicelli.</p>
+                    <div class="card-row"><span class="price">₹129</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="drinks">
+                  <div class="food-image cold-coffee"></div>
+                  <div class="food-body">
+                    <h4>Classic Cold Coffee</h4>
+                    <p>Chilled coffee blended smooth and topped with a creamy froth.</p>
+                    <div class="card-row"><span class="price">₹119</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="biryani">
+                  <div class="food-image dum-biryani"></div>
+                  <div class="food-body">
+                    <h4>Hyderabadi Dum Biryani</h4>
+                    <p>Slow-cooked basmati rice layered with aromatic dum spices.</p>
+                    <div class="card-row"><span class="price">₹279</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="biryani">
+                  <div class="food-image paneer-biryani"></div>
+                  <div class="food-body">
+                    <h4>Paneer Tikka Biryani</h4>
+                    <p>Smoky paneer tikka tucked into fragrant masala rice.</p>
+                    <div class="card-row"><span class="price">₹259</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="biryani">
+                  <div class="food-image egg-biryani"></div>
+                  <div class="food-body">
+                    <h4>Spicy Egg Biryani</h4>
+                    <p>Masala-coated eggs with saffron rice and crisp onions.</p>
+                    <div class="card-row"><span class="price">₹229</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="biryani">
+                  <div class="food-image mushroom-biryani"></div>
+                  <div class="food-body">
+                    <h4>Mushroom Dum Biryani</h4>
+                    <p>Earthy mushrooms and basmati rice cooked with whole spices.</p>
+                    <div class="card-row"><span class="price">₹239</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="biryani">
+                  <div class="food-image mutton-biryani"></div>
+                  <div class="food-body">
+                    <h4>Mutton Dum Biryani</h4>
+                    <p>Fragrant basmati rice layered with slow-cooked, tender mutton.</p>
+                    <div class="card-row"><span class="price">₹329</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" id="sides" data-category="sides">
+                  <div class="food-image peri-fries"></div>
+                  <div class="food-body">
+                    <h4>Peri Peri Fries</h4>
+                    <p>Crispy fries tossed in a zesty, gently-spiced seasoning.</p>
+                    <div class="card-row"><span class="price">₹119</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="sides">
+                  <div class="food-image garlic-bread"></div>
+                  <div class="food-body">
+                    <h4>Cheesy Garlic Bread</h4>
+                    <p>Toasted bread with garlic butter, herbs and melted cheese.</p>
+                    <div class="card-row"><span class="price">₹139</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="sides">
+                  <div class="food-image samosa-duo"></div>
+                  <div class="food-body">
+                    <h4>Crispy Samosa Duo</h4>
+                    <p>Two golden potato samosas served with mint chutney.</p>
+                    <div class="card-row"><span class="price">₹89</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="sides">
+                  <div class="food-image paneer-tikka"></div>
+                  <div class="food-body">
+                    <h4>Paneer Tikka Skewers</h4>
+                    <p>Smoky grilled paneer with peppers and a mint dip.</p>
+                    <div class="card-row"><span class="price">₹199</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" id="desserts" data-category="desserts">
+                  <div class="food-image gulab-jamun"></div>
+                  <div class="food-body">
+                    <h4>Gulab Jamun</h4>
+                    <p>Soft, warm milk dumplings soaked in fragrant sugar syrup.</p>
+                    <div class="card-row"><span class="price">₹89</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="desserts">
+                  <div class="food-image lava-cake"></div>
+                  <div class="food-body">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>Warm chocolate cake with a rich, gooey centre.</p>
+                    <div class="card-row"><span class="price">₹149</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="desserts">
+                  <div class="food-image rasmalai"></div>
+                  <div class="food-body">
+                    <h4>Rasmalai</h4>
+                    <p>Delicate cheese patties in chilled cardamom milk.</p>
+                    <div class="card-row"><span class="price">₹109</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="desserts">
+                  <div class="food-image fudge-brownie"></div>
+                  <div class="food-body">
+                    <h4>Chocolate Fudge Brownie</h4>
+                    <p>A rich, fudgy chocolate brownie baked until just set.</p>
+                    <div class="card-row"><span class="price">₹129</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+                <article class="food-card" data-category="desserts">
+                  <div class="food-image kulfi"></div>
+                  <div class="food-body">
+                    <h4>Malai Kulfi</h4>
+                    <p>Traditional creamy kulfi finished with a sprinkle of nuts.</p>
+                    <div class="card-row"><span class="price">₹89</span><a class="order-btn small" href="contact.html">Order Now</a></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </main>
+
+          <footer class="site-footer">
+            <div class="footer-brand">
+              <div class="brand-icon small"><span>🍽️</span></div>
+              <div class="brand-copy">
+                <h2>Velora Bites</h2>
+                <small>Good Food Good Mood</small>
+              </div>
+              <p>We serve delicious food with fresh ingredients to make your day better.</p>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <ul>
+                <li>📍 123 Food Street, Hyderabad</li>
+                <li>📞 +91 9987983594</li>
+                <li>✉️ hello@velorabites.com</li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <h4>Follow Us</h4>
+              <ul>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+              </ul>
+            </div>
+            <div class="newsletter">
+              <h4>Newsletter</h4>
+              <p>Subscribe to get special offers.</p>
+              <form>
+                <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="menu.js"></script>
+</body>
+</html>
